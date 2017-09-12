@@ -1,0 +1,8 @@
+Event sidebar:
+1. select an event from Event sidebar will highlight the corresponding event within the Event Timeline.
+2. any object associated with event in both the visualization panel and object sidebar
+3. any person involved in the event both in the sidebar and interaction window
+4. colars and symbols associated with identifying people, events, and object can be changed.
+5. visibility can be toggled on and off, and elements can be renamed.
+6. layers sidebar can be collapsed to give the user more screen real estate for the visualization window.
+7. people can be joined into a group that represents one person, for person who leaves observe area and reenter.

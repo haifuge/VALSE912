@@ -1,0 +1,135 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>769ad472-e136-4d89-b469-0183ffafddb6</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Windows.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>VALSE</Name>
+    <RootNamespace>VALSE</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonMethod.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\CommonTools.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataEntity.py" />
+    <Compile Include="UI\DateMenu\CustomFrequencyPanel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\DateMenu\DateMenu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DBOperation.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\DateMenu\DateSelector.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\DateMenu\FrequencySelectionBtns.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\DateMenu\MonthlySelectionPanel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\DateMenu\WeeklySelectionPanel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\DateMenu\YearlySelectionPanel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\EventTimeline\DragButton.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\EventTimeline\EventGrid.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\EventTimeline\GridArea.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\EventTimeline\Tileline.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\EventTimeline\TimeLine.py" />
+    <Compile Include="Timer.py" />
+    <Compile Include="UI\EventTimeline\VerticalLine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\MapWindow\VectorTrail.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Object\Marker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Object\Person.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Sidebar\MarkerButton.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Sidebar\MarkerSelection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Sidebar\PeopleItem.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Sidebar\PeopleSidebar.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Maps\" />
+    <Folder Include="UI\" />
+    <Folder Include="Pictures\" />
+    <Folder Include="UI\EventTimeline\" />
+    <Folder Include="UI\DateMenu\" />
+    <Folder Include="UI\MapWindow\" />
+    <Folder Include="UI\Object\" />
+    <Folder Include="UI\Sidebar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\testMap.png" />
+    <Content Include="Pictures\fforward.png" />
+    <Content Include="Pictures\freverse.png" />
+    <Content Include="Pictures\invisible.png" />
+    <Content Include="Pictures\lighter.png" />
+    <Content Include="Pictures\light_normal.png" />
+    <Content Include="Pictures\pause.png" />
+    <Content Include="Pictures\play.png" />
+    <Content Include="Pictures\playbuttons.png" />
+    <Content Include="Pictures\stop.png" />
+    <Content Include="Pictures\visible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
